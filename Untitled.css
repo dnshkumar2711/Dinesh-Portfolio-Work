@@ -1,0 +1,39 @@
+/* CLICK CURSOR */
+.card{
+  cursor:pointer;
+}
+
+/* BACKGROUND POPUP */
+.modal{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.6);
+  display:none;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+  backdrop-filter:blur(8px);
+}
+
+/* POPUP BOX */
+.modal-box{
+  background:#0b1224;
+  padding:25px;
+  width:300px;
+  border-radius:12px;
+  color:white;
+  animation:pop 0.3s ease;
+}
+
+@keyframes pop{
+  from{transform:scale(0.7);opacity:0}
+  to{transform:scale(1);opacity:1}
+}
+
+/* CLOSE BUTTON */
+.close{
+  float:right;
+  cursor:pointer;
+  font-size:20px;
+  color:#38bdf8;
+}
